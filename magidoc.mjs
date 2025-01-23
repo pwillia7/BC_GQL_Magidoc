@@ -7,14 +7,10 @@ export default {
     },
     website: {
       template: 'carbon-multi-page',
-      staticAssets: path.join(__dirname, 'assets'),
+      // Just use a string path relative to your magidoc.mjs file
+      staticAssets: './assets',
       options: {
-        // You need to specify the base path of your github pages root
-        // Example: `/magidoc`
         siteRoot: '/pwillia7/BC_GQL_Magidoc',
-      },  
-      // The important part is adding `options.queryGenerationFactories`
-      options: {
         queryGenerationFactories: {
           GenericScalar: { example: 'my-generic-value' },
           Decimal: 123.45,
