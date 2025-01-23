@@ -10,7 +10,7 @@ export default {
       // Just use a string path relative to your magidoc.mjs file
       staticAssets: './assets',
       options: {
-        siteRoot: '/pwillia7/BC_GQL_Magidoc',
+        siteRoot: '/BC_GQL_Magidoc',
         queryGenerationFactories: {
           GenericScalar: { example: 'my-generic-value' },
           Decimal: 123.45,
